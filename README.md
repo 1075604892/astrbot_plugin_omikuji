@@ -1,14 +1,24 @@
-# astrbot-plugin-helloworld
+# astrbot_plugin_omikuji
 
-AstrBot 插件模板 / A template plugin for AstrBot plugin feature
+每日运势抽签插件 / Daily fortune omikuji plugin for AstrBot.
 
-> [!NOTE]
-> This repo is just a template of [AstrBot](https://github.com/AstrBotDevs/AstrBot) Plugin.
-> 
-> [AstrBot](https://github.com/AstrBotDevs/AstrBot) is an agentic assistant for both personal and group conversations. It can be deployed across dozens of mainstream instant messaging platforms, including QQ, Telegram, Feishu, DingTalk, Slack, LINE, Discord, Matrix, etc. In addition, it provides a reliable and extensible conversational AI infrastructure for individuals, developers, and teams. Whether you need a personal AI companion, an intelligent customer support agent, an automation assistant, or an enterprise knowledge base, AstrBot enables you to quickly build AI applications directly within your existing messaging workflows.
+## 指令
 
-# Supports
+| 指令 | 功能 |
+|------|------|
+| `/抽签` | 抽取今日运势签文 |
+| `/omikuji` | 同上 |
+| `/运势` | 查看今日运势（不消耗抽签次数） |
 
-- [AstrBot Repo](https://github.com/AstrBotDevs/AstrBot)
-- [AstrBot Plugin Development Docs (Chinese)](https://docs.astrbot.app/dev/star/plugin-new.html)
-- [AstrBot Plugin Development Docs (English)](https://docs.astrbot.app/en/dev/star/plugin-new.html)
+## 功能
+
+- 七档运势（大吉～大凶），带概率分布
+- 幸运物、幸运颜色、幸运方向随机组合
+- 每日每人仅可抽签一次，0 点重置
+- 可配时钟偏移和重置时间
+
+## 配置
+
+通过 AstrBot WebUI 面板配置：
+- **时区偏移**：默认 +8（中国标准时间）
+- **重置时间**：每日重置的时间点，默认 0 点

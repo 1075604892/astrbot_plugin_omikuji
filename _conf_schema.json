@@ -1,0 +1,19 @@
+{
+  "timezone_offset": {
+    "description": "时区偏移（小时）",
+    "type": "int",
+    "default": 8,
+    "hint": "UTC+8 为中国标准时间，日本为 +9"
+  },
+  "reset_hour": {
+    "description": "每日重置时间（小时）",
+    "type": "int",
+    "default": 0,
+    "hint": "0 表示 0 点重置，6 表示早上 6 点重置",
+    "slider": {
+      "min": 0,
+      "max": 23,
+      "step": 1
+    }
+  }
+}
